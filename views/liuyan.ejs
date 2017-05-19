@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>留言</title>
+    <style type="text/css">
+    	.liuyanban {width: 400px;height: 400px;border: 1px solid #ccc;position: absolute;left: 50%;top: 50%;margin-left: -200px;margin-top: -200px;box-shadow: 10px 10px 10px #ccc;}
+    	.header{height: 60px;text-align: center;font-size: 30px;}
+    	.tijiao div{margin-top: 20px;padding-left: 20px;}
+    	.tijiao span{float: left;margin-right: 10px;}
+    	.tijiao .div1{height: 200px;}
+    	.tijiao .div1 textarea{height: 200px;width: 300px;}
+    	.tijiao .ipt1{margin-top: 20px;width: 100px;height: 30px;float: right;margin-right: 30px;}
+    </style>
+  </head>
+  <body>
+  	
+  	<div class="liuyanban">
+  	
+    <%- include('header.ejs')%>
+    <div class="tijiao">
+    	 <form action="/users/list" method="post">
+    	
+    		<div><span>标题：</span><input type="text" name="biaoti"/></div>
+    		<div class="div1"><span>内容：</span><textarea name="con" rows="" cols=""></textarea></div>
+    		
+    	
+    		<input class="ipt1" type="submit" value="发布留言"/>
+    	</form>
+    </div>
+   
+    </div>
+  </body>
+</html>

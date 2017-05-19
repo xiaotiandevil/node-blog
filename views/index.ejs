@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />  
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css"/>
+  </head>
+  <body>
+    <div class="top">
+    <div class="wrap">
+    	<h4>这仅仅是一个可以看的博客<span>当你不能再拥有的时候，唯一可以做的，就是令自己不要忘记。</span></h4>
+    	<div class="pre">
+    		
+    		<% if(!user){%>
+    		<button type="button" class="btn btn-default" onclick="location.href='/login'">登录</button>
+    		<button type="button" class="btn btn-default" onclick="location.href='/register'">注册</button>
+    		<% }else{%>
+    		
+    		<span>用户名：<%- user  %></span>
+    		<button type="button" class="btn btn-default" onclick="location.href='/relogin'">退出</button>
+    		<button type="button" class="btn btn-default" onclick="location.href='/liuyan'">留言</button>
+    		
+    		
+    		<% }  %>
+    	</div>
+    </div>	
+    </div>
+  	<div class="head">
+  	<div class="wrap">
+  		<div class="box">
+  			<ul class="nav nav-tabs">
+					<li class="active"><a href="#">首页</a></li>
+					<li><a href="#">慢生活</a></li>
+					<li><a href="#">碎言碎语</a></li>
+					<li><a href="#">学无止境</a></li>
+				</ul>
+  		</div>
+  	</div>
+  	</div>
+  	<div class="banner">
+  	<div class="wrap">
+  		<h4>个人博客模板</h4>
+  		<div class="banner1">
+  					<div id="myCarousel" class="carousel slide">
+							<!-- 轮播（Carousel）指标 -->
+							<ol class="carousel-indicators">
+								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#myCarousel" data-slide-to="1"></li>
+								<li data-target="#myCarousel" data-slide-to="2"></li>
+							</ol>   
+						
+							<!-- 轮播（Carousel）项目 -->
+							<div class="carousel-inner">
+								<div class="item active">
+										<dl>
+											<dt><img src="/images/banner1.jpg"/></dt>
+											<dd>关于周天成的个人博客</dd>
+											<dd>关于自己个人博客的一些想法，首先...</dd>
+										</dl>
+										<dl>
+											<dt><img src="/images/banner2.jpg"/></dt>
+											<dd>一款基于山水的个人博客</dd>
+											<dd>山本无忧，因雪白头;水本无愁，因风起皱</dd>
+										</dl>
+										<dl>
+											<dt><img src="/images/banner3.jpg"/></dt>
+											<dd>一款基于山水的个人博客</dd>
+											<dd>山本无忧，因雪白头;水本无愁，因风起皱</dd>
+										</dl>
+								</div>
+								<div class="item">
+										<dl>
+											<dt><img src="/images/banner2.jpg"/></dt>
+											<dd>一款基于山水的个人博客</dd>
+											<dd>山本无忧，因雪白头;水本无愁，因风起皱</dd>
+										</dl>
+										<dl>
+											<dt><img src="/images/banner3.jpg"/></dt>
+											<dd>一款基于山水的个人博客</dd>
+											<dd>山本无忧，因雪白头;水本无愁，因风起皱</dd>
+										</dl>
+										<dl>
+											<dt><img src="/images/banner3.jpg"/></dt>
+											<dd>一款基于山水的个人博客</dd>
+											<dd>山本无忧，因雪白头;水本无愁，因风起皱</dd>
+										</dl>
+								</div>
+								<div class="item">
+										<dl>
+											<dt><img src="/images/banner3.jpg"/></dt>
+											<dd>一款基于山水的个人博客</dd>
+											<dd>山本无忧，因雪白头;水本无愁，因风起皱</dd>
+										</dl>
+										<dl>
+											<dt><img src="/images/banner2.jpg"/></dt>
+											<dd>一款基于山水的个人博客</dd>
+											<dd>山本无忧，因雪白头;水本无愁，因风起皱</dd>
+										</dl>
+										<dl>
+											<dl>
+											<dt><img src="/images/banner2.jpg"/></dt>
+											<dd>一款基于山水的个人博客</dd>
+											<dd>山本无忧，因雪白头;水本无愁，因风起皱</dd>
+										</dl>
+										<dl>
+								</div>
+							</div>
+							<!-- 轮播（Carousel）导航 -->
+							<a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>
+							<a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>
+						</div>
+						
+						
+						<div style="text-align:center;">
+							<input type="button" class="btn start-slide" value="Start">
+							<input type="button" class="btn pause-slide" value="Pause">
+							<input type="button" class="btn prev-slide" value="Previous Slide">
+							<input type="button" class="btn next-slide" value="Next Slide">
+							<input type="button" class="btn slide-one" value="Slide 1">
+							<input type="button" class="btn slide-two" value="Slide 2">
+							<input type="button" class="btn slide-three" value="Slide 3">
+						</div>
+  			
+  			
+  		</div>
+  		
+  		
+  	</div>
+  	</div>
+  	<div class="cont">
+  	<div class="wrap">
+  		<h3><span>文章推荐</span></h3>
+  		<div class="cont1">
+  			<ul>
+  				<li>
+  					<div class="img"><img src="/images/con3.jpg"/></div>
+  					<div class="con">
+  						<h4>如何建立个人博客</h4>
+  						<p><span>发布人：周天成</span><span>发布时间：2017-3-03</span><span>分类：学无止境</span></p>
+  						<p>想必很多人都想建立一个，属于自己的个人博客，把自己的一些学习的经验和经历，通过互联网的形式来分享给别人。通过分享与网友进行互动，让更多的人了解和认识你，并且树立自己在互联网上的个人品牌，其实这就是一种“自媒体”。那么我们怎么去建立自己的自媒体博客呢？我认为：首先得先明白建立一个博客的流程是什么？只有先了解这套流程，我们才能做出自己满意的个人博客</p>
+  					</div>
+  				</li>
+  				<li>
+  					<div class="img"><img src="/images/con3.jpg"/></div>
+  					<div class="con">
+  						<h4>如何建立个人博客</h4>
+  						<p><span>发布人：周天成</span><span>发布时间：2017-3-03</span><span>分类：学无止境</span></p>
+  						<p>想必很多人都想建立一个，属于自己的个人博客，把自己的一些学习的经验和经历，通过互联网的形式来分享给别人。通过分享与网友进行互动，让更多的人了解和认识你，并且树立自己在互联网上的个人品牌，其实这就是一种“自媒体”。那么我们怎么去建立自己的自媒体博客呢？我认为：首先得先明白建立一个博客的流程是什么？只有先了解这套流程，我们才能做出自己满意的个人博客</p>
+  					</div>
+  				</li>
+  				<li>
+  					<div class="img"><img src="/images/con3.jpg"/></div>
+  					<div class="con">
+  						<h4>如何建立个人博客</h4>
+  						<p><span>发布人：周天成</span><span>发布时间：2017-3-03</span><span>分类：学无止境</span></p>
+  						<p>想必很多人都想建立一个，属于自己的个人博客，把自己的一些学习的经验和经历，通过互联网的形式来分享给别人。通过分享与网友进行互动，让更多的人了解和认识你，并且树立自己在互联网上的个人品牌，其实这就是一种“自媒体”。那么我们怎么去建立自己的自媒体博客呢？我认为：首先得先明白建立一个博客的流程是什么？只有先了解这套流程，我们才能做出自己满意的个人博客</p>
+  					</div>
+  				</li>
+  			</ul>
+  			
+  			
+  			
+  		</div>
+  		<div class="cont2">
+  				<h4>最新文章</h4>
+  				<ul>
+  					<li><span>1</span>【活动作品】柠檬绿兔小白个人博客模板</li>
+  					<li><span>2</span>情侣博客模板系列之《回忆》Html</li>
+  					<li><span>3</span>黑色Html5个人博客模板主题《如影随形》</li>
+  					<li><span>4</span>个人博客《草根寻梦》—手机版模板</li>
+  					<li><span>5</span>个人博客模板（2014草根寻梦）</li>
+  					<li><span>6</span>情侣博客模板系列之《初夏》Html</li>
+  					<li><span>7</span>响应式个人博客模板（蓝色清新）</li>
+  					<li><span>8</span>个人博客模板《世界杯来袭》</li>
+  					<li><span>9</span>情侣博客模板系列之《回忆》PSD</li>
+  				</ul>
+  				
+  				<div class="cont3">
+  					
+  						<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1527383574&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:1527383574:53" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>
+  				</div>
+  			
+  			
+  		</div>
+  	</div>
+  	</div>
+  </body>
+  
+  <script src="/javascripts/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+  	$('.head ul li').on('click',function(){
+  		$(this).addClass('active').siblings().removeClass('active')
+  	})
+  	// 初始化轮播
+		$(".start-slide").click(function(){
+			$("#myCarousel").carousel('cycle');
+		});
+		// 停止轮播
+		$(".pause-slide").click(function(){
+			$("#myCarousel").carousel('pause');
+		});
+		// 循环轮播到上一个项目
+		$(".prev-slide").click(function(){
+			$("#myCarousel").carousel('prev');
+		});
+		// 循环轮播到下一个项目
+		$(".next-slide").click(function(){
+			$("#myCarousel").carousel('next');
+		});
+		// 循环轮播到某个特定的帧 
+		$(".slide-one").click(function(){
+			$("#myCarousel").carousel(0);
+		});
+		$(".slide-two").click(function(){
+			$("#myCarousel").carousel(1);
+		});
+		$(".slide-three").click(function(){
+			$("#myCarousel").carousel(2);
+		});
+  </script>
+  
+</html>

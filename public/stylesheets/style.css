@@ -1,0 +1,47 @@
+html,body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{margin:0; padding:0;}
+.wrap{width: 990px;margin: 0 auto;}
+ul,li,ol,dl,dt,dd{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{font-size:12px; font-family: "仿宋";}
+
+
+.top{height: 30px;background: #ccc;width: 100%;}
+
+.top h4{margin-top: 5px;width:580px;float: left;}
+.top h4 span{font-size: 12px;font-family: "仿宋";padding-left: 20px;}
+.top .pre{width: 200px;float: right;}
+.top .pre button{height: 30px;}
+
+.head{height: 102px;}
+.head .box{width: 100%;height: 102px;background: url(/images/tip.png) no-repeat left center;}
+.box ul{width: 500px;float: right;margin-top: 40px;}
+
+.banner{height: 310px;width: 100%;}
+.banner h4{height: 20px;}
+.banner .banner1{height: 245px}
+.banner .banner1 .carousel-inner{height: 245px;}
+.banner .banner1 .item{height: 245px;width: 100%;border: 1px solid #ccc;padding-left: 57px;}
+.banner .banner1 .item dl{width: 270px;height: 245px;float: left;margin: 10px 10px 0px 10px}
+.banner .banner1 .item dl img{width: 270px;height: 160px;}
+.banner .banner1 .item dl dd{height: 30px;line-height: 30px;}
+.banner .banner1 .item dl dd:nth-child(2){font-size: 20px;}
+
+
+.cont h3{height: 25px;background:url(/images/con2.jpg) repeat-x right center;}
+.cont h3 span{background: #fff;width: 120px;height: 25px;display: block;}
+
+.cont .cont1{width: 690px;min-height: 500px;border-right: 1px solid #ccc;float: left;}
+.cont .cont1 ul{width: 690px;min-height: 500px;padding-top: 15px;}
+.cont .cont1 ul li{width: 690px;height: 200px;border-bottom: 1px solid #ccc;margin-bottom: 20px;}
+.cont .cont1 ul li .img{width: 230px;height: 200px;float: left;margin-right: 10px;}
+.cont .cont1 ul li .img img{width: 215px;height: 144px;margin-top: 25px;margin-left: 15px;}
+.cont .cont1 ul li .con{width: 440px;float: left;}
+.cont .cont1 ul li .con h4{font-size: 16px;font-weight: bold;}
+.cont .cont1 ul li .con p{height: 20px;line-height: 18px;}
+.cont .cont1 ul li .con p span{margin-right: 30px;}
+
+.cont2{float: left;width: 290px;margin-left: 5px;}
+.cont2 h4{height: 30px;text-align: center;font-size: 20px;line-height: 30px;}
+.cont2 li{height: 30px;line-height: 30px;overflow: hidden;}
+.cont2 li span{float: left;height: 20px;width: 20px;text-align: center;line-height: 20px;border-radius: 50%;background: #ccc;color: #fff;margin-top: 5px;margin-right: 5px;}
+.cont3 a{float: right;}
